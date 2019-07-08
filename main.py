@@ -11,7 +11,6 @@ import csv
 #             line_count += 1
 
 # ihtiyacım olan şey plan_id'deki (row[0]) son 5 eleman ve karşılığı olan rate değeri
-
 # with open('deneme.csv') as deneme_file:
 #     deneme_reader = csv.reader(deneme_file, delimiter=',')
 #     line_count = 0
@@ -28,4 +27,4 @@ for i in range(len(plan)):
     temp = plan.plan_id[i]
     for j in range(len(zips)):
         if int(temp[-5:]) == int(zips.zipcode[j]):
-            zips.rate.to_csv(str(plan.rate[i]))
+            print(str(plan.rate[i]))
